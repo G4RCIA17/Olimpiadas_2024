@@ -1,0 +1,300 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int main ()
+{
+// TELA DE LOGIN
+char email[30], nome[30], sobrenome[30], nacionalidade[30];
+int senha = 645879, escolha, escolha2, escolha3, escolha4, escolha5, escolha6, escolha7, cpf, cep, quantidade, quantidade1, quantidade2;
+float peso, altura;
+
+printf("\nTela de login\n");
+
+printf("Digite seu email: ");
+scanf("%s", &email[30]);
+
+printf("Digite a sua senha: ");
+scanf("%d", &senha);
+
+printf("\n2 -> Suporte\n5 -> Gerenciamento\n");
+printf("Digite um numero: ");
+scanf("%d", &escolha);
+
+if(escolha == 2)
+{
+
+printf("\n4 -> Problemas com forma de pagamento\n3 -> Outros problemas...\n ");
+printf("Digite um numero: ");
+scanf("%d", &escolha2);
+if(escolha2 == 4)
+{
+printf("\nEntraremos em contato para solucionar o problema!");
+
+}
+else if(escolha2 == 3)
+{
+printf("\nMandaremos um de nossos moderadores para solucionar o seu problema!");
+}
+}
+
+if (escolha == 5)
+{
+printf("\n10 -> Tela de cadastros para atletas");
+printf("\n11 -> Cadastro de modalidade olimpica");
+printf("\n12 -> Cadastro de equipe olimpica");
+printf("\n13 -> Atendimento aos protocolos");
+printf("\n14 -> Relatorio geral da competição");
+printf("\n26 -> Planos para os atletas\n");
+printf("Digite um numero: ");
+scanf("%d", &escolha3);
+
+if(escolha3 == 10) // TELA DE CADASTRO DE ATLETAS(MATHEUS)
+{
+printf("Digite o seu nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o seu sobrenome: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite a sua nacionalidade: ");
+scanf("%s", &nacionalidade[30]);
+printf("Digite seu CPF: ");
+scanf("%d", &cpf);
+printf("Digite o seu peso: ");
+scanf("%f", &peso);
+printf("Digite sua altura: ");
+scanf("%f", &altura);
+
+}
+if (escolha3 == 11) // CADASTRO DE MODALIDADE OLIMPICA(GABRIEL)
+{
+printf("\n15 -> Basquete\n16 -> Atletismo\n17 -> Boxe\n18 -> Futebol\n19 -> Mais...\n");
+printf("Digite o numero: ");
+scanf("%d", &escolha4);
+
+if(escolha4 == 15)
+{
+printf("\nDigite o nome do atleta: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome do atleta: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o seu email: ");
+scanf("%s", &email[30]);
+printf("Digite a sua senha: ");
+scanf("%d", &senha);
+
+}
+if (escolha4 == 16)
+{
+printf("Digite o nome do atleta: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome do atleta: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o seu email: ");
+scanf("%s", &email[30]);
+printf("Digite a sua senha: ");
+scanf("%d", &senha);
+}
+if (escolha4 == 17)
+{
+printf("Digite o nome do atleta: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome do atleta: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o seu email: ");
+scanf("%s", &email[30]);
+printf("Digite a sua senha: ");
+scanf("%d", &senha);
+}
+if (escolha4 == 18)
+{
+printf("Digite o nome do atleta: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome do atleta: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o seu email: ");
+scanf("%s", &email[30]);
+printf("Digite a sua senha: ");
+scanf("%d", &senha);
+}
+if (escolha4 == 19)
+{
+printf("procurando modalidade aguarde...");
+}
+}
+if (escolha3 == 12)
+{
+printf("\n20 -> equipe de basquete\n21 -> equipe de boxe\n22 -> equipe de atletismo\n23 -> equipe de futebol");
+printf("\nDigite o numero: ");
+scanf("%d", &escolha5);
+
+if(escolha5 == 20)
+{
+printf("\nEquipe de basquete");
+printf("\nDigite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+
+}
+
+if (escolha5 == 21)
+{
+printf("\nEquipe de boxe");
+printf("\nDigite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+}
+
+if (escolha5 == 22)
+{
+printf("\nEquipe de Atletismo");
+printf("\nDigite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+}
+
+if (escolha5 == 23)
+{
+printf("\nEquipe de futebol");
+printf("\nDigite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+}
+}
+if (escolha3 == 13)
+{
+printf("\nProtocolos de distanciamento");
+printf("\nPOR FAVOR, MANTENHA UM METRO DE DISTANCIA AO PRÓXIMO!");
+printf("\nSEMPRE UTILIZE A MÁSCARA!");
+printf("\nSEMPRE QUE POSSÍVEL UTILIZE O ALCOOL EM GEL!");
+}
+if (escolha3 == 14)
+{
+printf("\n24 -> Calendario olimpico\n25 -> Contagem de medalhas\n");
+printf("Digite o numero: ");
+scanf("%d", &escolha6);
+
+if(escolha6 == 24)
+{
+printf("\nFutebol -> EQUIPE1 X EQUIPE2 -> Dia 12 de Novembro");
+printf("\nFutebol -> EQUIPE1 X EQUIPE3 -> Dia 16 de Novembro");
+printf("\nFutebol -> EQUIPE2 X EQUIPE4 -> Dia 16 de Novembro");
+printf("\nFutebol -> EQUIPE2 X EQUIPE3 -> Dia 20 de Novembro");
+printf("\nFutebol -> EQUIPE3 X EQUIPE4 -> Dia 24 de novembro ");
+printf("\nFutebol -> EQUIPE1 X EQUIPE4 -> Dia 28 de novembro\n");
+printf("\nDisputa do terceiro lugar\nEquipe não definida x Equipe não definida");
+printf("\nFinal -> Equipe não definida x Equipe não definida\n");
+printf("\nMais modalidades disponíveis em breve\n");
+}
+if (escolha6 == 25)
+{
+printf("Contagem de medalhas será feita apenas no final das olimpíadas");
+}
+}
+if (escolha3 == 26)
+{
+printf("\nCadastro de voluntario\n");
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o CPF: ");
+scanf("%d", &cpf);
+printf("\nCadastro de médico\n");
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o CPF: ");
+scanf("%d", &cpf);
+printf("\nCadastro de funcionários\n");
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome: ");
+scanf("%s", &sobrenome[30]);
+printf("Digite o CPF: ");
+scanf("%d", &cpf);
+printf("\nEquipamentos:\n32 -> Basquete\n54 -> Futebol\n46 -> mais...\n");
+printf("Digite o numero: ");
+scanf("%d", &escolha7);
+
+if (escolha7 == 32)
+{
+printf("\nQuantidade de camisas disponíveis\n");
+printf("Digite a quantidade: ");
+scanf("%d", &quantidade);
+
+printf("\nQuantidade de shorts disponíveis\n");
+printf("Digite a quantidade: ");
+scanf("%d", &quantidade1);
+
+printf("\nQuantidade de bolas de basquete disponíveis\n");
+printf("Digite a quantidade: ");
+scanf("%d", &quantidade2);
+
+printf("\n%d camisas %d shorts %d bolas\n", quantidade, quantidade1, quantidade2);
+}
+if(escolha7 == 54)
+{
+printf("\nQuantidade de camisas disponíveis\n");
+printf("Digite a quantidade: ");
+scanf("%d", &quantidade);
+
+printf("\nQuantidade de shorts disponíveis\n");
+printf("Digite a quantidade: ");
+scanf("%d", &quantidade1);
+
+printf("\nQuantidade de bolas de futebol disponíveis\n");
+printf("Digite a quantidade: ");
+scanf("%d", &quantidade2);
+
+printf("\n%d camisas %d shorts %d bolas\n", quantidade, quantidade1, quantidade2);
+}
+if (escolha7 == 46)
+{
+printf("Carregando o sistema...\n");
+}
+
+}
+printf("Digite o email: ");
+scanf("%s", &email[30]);
+printf("Digite a senha: ");
+scanf("%d", &senha);
+
+printf("Cadastro de alojamento\n");
+printf("Digite o nome: ");
+scanf("%s", &nome[30]);
+printf("Digite o sobrenome: ");
+scanf("%s", &sobrenome[30]);
+
+printf("\nNome:%s Sobrenome:%s \n", &nome[30], &sobrenome[30]);
+printf("\nLocal de treinamento para os atletas\n");
+printf("Os jogadores de basquete vão treinar no Local 1\n");
+printf("Os jogadores de futebol vão treinar no Local 2\n");
+printf("Os atletas de atletismo vão treinar no Local3\n");
+printf("Os lutadores de judo vão treinar no Local4\n");
+printf("O restante vão treinar no Local 5 e Local 6\n");
+printf("Os jogos vão acontecer no Stade de France, Stade Pierre-Mauroy e Estadio Parc des Princes");
+}
+return 0;
+}
